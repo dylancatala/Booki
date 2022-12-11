@@ -1,0 +1,422 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    /* max-width: 1400px; */
+    padding: 0;
+    margin: auto;
+}
+.page_wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: white;
+    padding: 50px 50px 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, h4{
+    margin: 0;
+    font-size: 22px;
+}
+
+h1, p {
+    line-height: 10px;
+}
+
+header {
+    display: flex;
+}
+.logo_booki {
+    flex: 1;
+}
+.logo_booki > img { 
+    width: 61px;
+    height: 19px;
+}
+.header_menu {
+    display: flex;
+}
+.header_menu a {
+    text-decoration: none;
+    color: black;
+    margin-left: 70px;
+}
+.formulaire {
+    display: flex;
+    padding: 10px 0;
+}
+
+.location_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    height: 49px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.fa-location-dot {
+   font-size: 1.25rem;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    height: 49px;
+    border: 1px solid #f2f2f2;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0 15px;
+}
+
+.research_btn {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    min-width: 50px;
+    height: 51px;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+.button_filters {
+    display: flex;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.button_filters h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.btn_container {
+    flex: 1;
+    display: flex;
+}
+
+.btn {
+    height: 50px;
+    margin-left: 35px;
+    border: 2px solid #D9D9D9;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 1.063rem;
+    font-weight: 700;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 1.313rem;
+    color: #0065fc;
+    padding-right: 10px;
+    padding-left: 3px;
+}
+
+.btn span {
+    flex: 1;
+    text-align: left;
+}
+
+.result_info {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 25px;
+}
+.result_info .fa-info {
+    color: #0065fc;
+    font-size: 0.75rem;
+}
+.result_info .icon {
+   width: 24px;
+   height: 24px;
+   border-radius: 50%; 
+   border: 1px solid #D9D9D9;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+}
+
+
+.host_container {
+    display: flex;
+    gap: 40px;
+}
+
+.host_box {
+    padding: 30px 30px 30px 30px;   
+    flex-basis: 70%;
+}
+
+.host_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    flex: 3;
+}
+
+
+.box_location {
+    background-color: white;
+}
+
+.box_location img {
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 5px solid #FFFFFF;
+}
+
+
+.host_grid h3 {
+    font-size: 1rem;
+}
+
+.box_location a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.box_location p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1px;
+}
+
+.card-content {
+    padding: 0 20px 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    flex: 1;
+    line-height: 0.875rem;
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+.see_more h3 {
+    font-size: 1.063rem;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+
+.popular_box {
+    flex-basis: 30%;
+    padding: 30px;  
+    display: flex;
+    flex-direction: column;
+}
+
+.popular_box_header h2 {
+    flex: 1;
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+
+.popular_grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 32px;
+    flex: 1;
+}
+
+.popular_card {
+    background-color: white;
+    display: flex;
+}
+
+.popular_card .image_container {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.popular_card .image_container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 16px 15px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.content h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    flex: 1;
+    margin: 0;
+    padding: 9px 0;
+    line-height: 0.875rem;
+}
+
+
+/*ARTICLES*/
+
+.activity_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding-bottom: 60px;
+    flex: 1;
+}
+
+.activity_section {
+    padding: 30px 0;
+}
+
+.activity_section h3 {
+    padding: 25px 0;
+}
+
+.article_image img {
+    width: 100%;
+    object-fit: cover;
+    height: 389px;
+}
+
+.article_content {
+    padding: 18px;
+}
+
+.article_content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 45px 70px;
+}
+
+footer .col {
+    line-height: 30px;
+    flex: 1;
+}
+
+footer .col > .title {
+    font-size: 1.125rem;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+/* GENERAL */
+
+.card {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card a {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.card.hori {
+    flex-direction: row;
+}
+
+.card.hori a {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.card img.radius-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card img.radius-left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.container-box {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.container-box .header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.container-box .header h2 {
+    flex: 1;
+}
+.container-box .header i {
+    color: #0065fc;
+    font-size: 1.125rem;
+}
+.review > .fa-star {
+    color: #0065fc;
+    font-size: 0.75rem;
+}
+.review > .fa-star.unselected {
+    color: #f2f2f2;
+}
+.shadow {
+    box-shadow: 0px 2px 10px #ddd;    
+}
+
+
+
+
+
+
+
+
+
+
